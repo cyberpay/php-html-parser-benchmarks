@@ -1,4 +1,5 @@
 
+
 # PHP HTML Parser Benchmarks
 
 Simple benchmark test for PHP HTML Parser.
@@ -27,26 +28,28 @@ Run the benchmark
 - [Simple HTML DOM](https://github.com/sunra/php-simple-html-dom-parser)
 - [zend-dom](https://github.com/zendframework/zend-dom)
 - [PHP Html Parser](https://github.com/paquettg/php-html-parser)
-- 
+ 
 # Test Environment
 - **OS**: Windows 7 64bit
 - PHP 7.1.4 (cli)  ( ZTS MSVC14 (Visual C++ 2015) x86 )
 - Python 3.7.0
 
 # Benchmark Results
+note: `*` element modification not supported
+
 ### Search element 100 iteration
 
     +------------------------+------------+-------------+
     | Parser                 | Time (sec) | Memory (kB) |
     +------------------------+------------+-------------+
-    | hQuery                 | 0.047      | 499         |
+    | hQuery*                | 0.047      | 499         |
     | HTML5DOMDocument       | 0.047      | 2339        |
     | DOMDocument            | 0.062      | 0.664       |
-    | nokogiri               | 0.062      | 5350        |
+    | nokogiri*              | 0.062      | 5350        |
     | SimpleHTMLDOM          | 0.062      | 402         |
     | DiDOM                  | 0.078      | 297         |
     | phphtmlparser          | 0.094      | 357         |
-    | zend-dom               | 0.094      | 70          |
+    | zend-dom*              | 0.094      | 70          |
     | DomCrawler             | 0.109      | 505         |
     +------------------------+------------+-------------+
     | BeautifulSoup (Python  | 0.078      | -           |
@@ -58,13 +61,13 @@ Run the benchmark
     | Parser                 | Time (sec) | Memory (kB) |
     +------------------------+------------+-------------+
     | DOMDocument            | 0.016      | 0           |
-    | hQuery                 | 0.047      | 0           |
+    | hQuery*                | 0.047      | 0           |
     | SimpleHTMLDOM          | 0.140      | 75          |
     | HTML5DOMDocument       | 0.234      | 2557        |
     | DiDOM                  | 0.234      | 0           |
-    | nokogiri               | 0.296      | -           |
+    | nokogiri*              | 0.296      | -           |
     | DomCrawler             | 0.468      | 0           |
-    | zend-dom               | 0.640      | 0           |
+    | zend-dom*              | 0.640      | 0           |
     | phphtmlparser          | 0.720      | 74          |
     +------------------------+------------+-------------+
     | BeautifulSoup (Python  | 0.876      | -           |
@@ -76,13 +79,13 @@ Run the benchmark
     | Parser                 | Time (sec) | Memory (kB) |
     +------------------------+------------+-------------+
     | DOMDocument            | 0.187      | 0           |
-    | hQuery                 | 0.485      | 0           |
+    | hQuery*                | 0.485      | 0           |
     | SimpleHTMLDOM          | 1.405      | 75          |
     | DiDOM                  | 2.325      | 0           |
     | HTML5DOMDocument       | 2.419      | 84          |
-    | nokogiri               | 2.871      | 0           |
+    | nokogiri*              | 2.871      | 0           |
     | DomCrawler             | 4.557      | 0           |
-    | zend-dom               | 6.242      | 0           |
+    | zend-dom*              | 6.242      | 0           |
     | phphtmlparser          | 7.210      | 74          |
     +------------------------+------------+-------------+
     | BeautifulSoup (Python  | 8.755      | -           |
