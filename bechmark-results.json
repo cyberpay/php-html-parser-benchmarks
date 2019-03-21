@@ -1,0 +1,118 @@
+{
+    "search": {
+        "10000": [
+            {
+                "DOMDocument": {
+                    "time": 0.1716010570526123,
+                    "memory": 680
+                }
+            },
+            {
+                "DiDOM": {
+                    "time": 2.372203826904297,
+                    "memory": 304136
+                }
+            },
+            {
+                "DomCrawler": {
+                    "time": 4.604007959365845,
+                    "memory": 517488
+                }
+            },
+            {
+                "hQuery": {
+                    "time": 0.48360109329223633,
+                    "memory": 511864
+                }
+            },
+            {
+                "html5-dom-document-php": {
+                    "time": 2.4970037937164307,
+                    "memory": 402128
+                }
+            },
+            {
+                "nokogiri": {
+                    "time": 2.8714048862457275,
+                    "memory": 4920448
+                }
+            },
+            {
+                "SimpleHTMLDOM": {
+                    "time": 1.4352021217346191,
+                    "memory": -5105384
+                }
+            },
+            {
+                "zend-dom": {
+                    "time": 6.179610967636108,
+                    "memory": 72224
+                }
+            },
+            {
+                "phphtmlparser": {
+                    "time": 7.21021294593811,
+                    "memory": 366120
+                }
+            }
+        ]
+    },
+    "modification": {
+        "10000": [
+            {
+                "DOMDocument": {
+                    "time": 1.1076021194458008,
+                    "memory": 48
+                }
+            },
+            {
+                "DiDOM": {
+                    "time": 4.136007070541382,
+                    "memory": 64
+                }
+            },
+            {
+                "DomCrawler": {
+                    "time": 4.853609085083008,
+                    "memory": 784
+                }
+            },
+            {
+                "hQuery": {
+                    "time": "not support",
+                    "memory": "not support"
+                }
+            },
+            {
+                "html5-dom-document-php": {
+                    "time": 4.2764081954956055,
+                    "memory": 753744
+                }
+            },
+            {
+                "nokogiri": {
+                    "time": "not support",
+                    "memory": "not support"
+                }
+            },
+            {
+                "SimpleHTMLDOM": {
+                    "time": 13.6872239112854,
+                    "memory": 3800104
+                }
+            },
+            {
+                "zend-dom": {
+                    "time": "not support",
+                    "memory": "not support"
+                }
+            },
+            {
+                "phphtmlparser": {
+                    "time": 36.11346411705017,
+                    "memory": -1330912
+                }
+            }
+        ]
+    }
+}
