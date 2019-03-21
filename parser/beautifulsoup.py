@@ -1,5 +1,8 @@
-from bs4 import BeautifulSoup
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import datetime
+from bs4 import BeautifulSoup
 
 # BeautifulSoup, HTML/XML parser for python
 
@@ -10,8 +13,9 @@ with open('./html/index.html') as f:
     
     # HTML Element Search
     soup = BeautifulSoup(html, 'html.parser')
-    start = datetime.datetime.now()
-    for i in range(1000):
+    startTime = datetime.datetime.now()
+
+    for i in range(10000):
         # search single element
         soup.select_one('#posts')
 
@@ -21,12 +25,12 @@ with open('./html/index.html') as f:
         # select child element
         soup.select('#posts .post')
 
-    timeResult = datetime.datetime.now() - start
-    print(timeResult.mi)
+    timeResult = datetime.datetime.now() - startTime
+    print(timeResult)
 
     # HTML Element Modification
-    start = datetime.datetime.now()
-    for i in range(1000):
+    startTime = datetime.datetime.now()
+    for i in range(10000):
         soup = BeautifulSoup(html, 'html.parser')
 
         # modify element
@@ -35,5 +39,5 @@ with open('./html/index.html') as f:
         # remove element
         soup.select_one('.post').decompose()
 
-    timeResult = datetime.datetime.now() - start
+    timeResult = datetime.datetime.now() - startTime
     print(timeResult)

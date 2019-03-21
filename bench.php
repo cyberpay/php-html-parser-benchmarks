@@ -4,14 +4,14 @@ require 'vendor/autoload.php';
 
 $filepath = __DIR__.'/html/index.html';
 $html = file_get_contents($filepath);
-$range = array(10000);
+$range = array(100);
 $results = array();
 
 require './parser/DOMDocument.php';
 require './parser/DiDOM.php';
 require './parser/DomCrawler.php';
 require './parser/hQuery.php';
-require './parser/html5-dom-document-php.php';
+require './parser/HTML5DOMDocument.php';
 require './parser/nokogiri.php';
 require './parser/simplehtmldom.php';
 require './parser/zend-dom.php';

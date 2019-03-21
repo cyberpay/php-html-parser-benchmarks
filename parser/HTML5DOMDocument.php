@@ -1,6 +1,6 @@
 <?php
 
-echo "Running benchmark for html5-dom-document-php...\n";
+echo "Running benchmark for HTML5DOMDocument...\n";
 
 use DiDom\Document;
 
@@ -26,7 +26,7 @@ for ($i = 0; $i < count($range); $i++) {
     $time = microtime(true) - $startTime;
     $memory = memory_get_usage() - $startMemory;
 
-    $results['search'][$range[$i]][] = array("html5-dom-document-php" => array(
+    $results['search'][$range[$i]][] = array("HTML5DOMDocument" => array(
         "time" => $time,
         "memory" => $memory
       ));
@@ -53,7 +53,7 @@ for ($i = 0; $i < count($range); $i++) {
     $time = microtime(true) - $startTime;
     $memory = memory_get_usage() - $startMemory;
 
-    $results['modification'][$range[$i]][] = array("html5-dom-document-php" => array(
+    $results['modification'][$range[$i]][] = array("HTML5DOMDocument" => array(
         "time" => $time,
         "memory" => $memory
       ));
